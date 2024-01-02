@@ -1,0 +1,245 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.calculator {
+  margin: 15px auto;
+  background: #1C1C1C;
+  max-width: 359px;
+  max-height: 663px;
+  border-radius: 39px;
+}
+
+.calculator__screen {
+  color: #FFF;
+  min-height: 211px;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+  padding: 0 15px;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  border-bottom: #D9D9D9 1px solid;
+}
+
+.calculator__input-field {
+  max-height: 80px;
+}
+
+.calculator__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0;
+}
+
+.calculator__row {
+  display: flex;
+  min-width: 336px;
+}
+
+.calculator__button {
+  margin: 2px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: #6D6D6D;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.2s linear;
+  flex: 1 1 calc(33.33% - 10px);
+}
+.calculator__button:hover {
+  background: #484848;
+  transition: 0.2s linear;
+}
+.calculator__button:active {
+  background: rgba(72, 72, 72, 0.4745098039);
+}
+
+.double {
+  border-radius: 40px;
+  flex-grow: 2;
+  flex-basis: calc(66.66% - 10px);
+}
+
+.orange {
+  background: #FFB800;
+  transition: 0.2s linear;
+}
+.orange:hover {
+  background: rgba(255, 183, 0, 0.4274509804);
+  transition: 0.2s linear;
+}
+.orange:active {
+  background: rgba(255, 183, 0, 0.2431372549);
+}
+
+.red {
+  background: rgba(255, 2, 2, 0.5294117647);
+  transition: 0.2s linear;
+}
+.red:hover {
+  background: rgba(255, 2, 2, 0.2509803922);
+  transition: 0.2s linear;
+}
+.red:active {
+  background: rgba(255, 2, 2, 0.1058823529);
+}/*# sourceMappingURL=style.css.map */
