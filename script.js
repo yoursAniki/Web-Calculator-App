@@ -41,11 +41,13 @@ const chooseOperation = op => {
 
 // Вычислить (Кнопка "=")
 
+let result;
+
 const calculate = () => {
-	//todo прм продолжителном нажатии на '=' выполнять op
-	if (operation) {
+  //todo прм продолжителном нажатии на '=' выполнять op
+  
+	if (operation && !result) {
 		number2 = parseInt(screenValue);
-		let result;
 		switch (operation) {
 			case "÷":
 				result = number1 / number2;
@@ -59,7 +61,25 @@ const calculate = () => {
 			case "+":
 				result = number1 + number2;
 				break;
-    }
+		}
+		screenValue = result;
+		updateScreen();
+  } else if (operation && result) {
+    number1 = result
+		switch (operation) {
+			case "÷":
+				result = number1 / number2;
+				break;
+			case "×":
+				result = number1 * number2;
+				break;
+			case "-":
+				result = number1 - number2;
+				break;
+			case "+":
+				result = number1 + number2;
+				break;
+		}
 		screenValue = result;
 		updateScreen();
 	}
