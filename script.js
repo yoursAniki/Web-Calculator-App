@@ -47,12 +47,12 @@ const chooseOperation = op => {
 let result;
 
 const calculate = () => {
-	if (operation ) {
-    number2 = parseInt(screenValue);
-    switch (operation) {
-      case "%":
-        result = number2 / 100 * number1;
-        break;
+	if (operation) {
+		number2 = parseInt(screenValue);
+		switch (operation) {
+			case "%":
+				result = (number2 / 100) * number1;
+				break;
 			case "÷":
 				result = number1 / number2;
 				break;
@@ -66,7 +66,8 @@ const calculate = () => {
 				result = number1 + number2;
 				break;
 		}
+		number1 = 0; // Обнуляем number1 после завершения вычислений
 		screenValue = result;
 		updateScreen();
-  }
+	}
 };
