@@ -10,7 +10,11 @@ let screenValue = screen.textContent;
 // Удаление всех элементов экрана (Кнопка AC)
 
 const clearDisplay = () => {
-	screenValue = "0";
+  screenValue = "0";
+  number1 = 0
+  number2 = 0
+  delete result
+  delete operation
 	updateScreen();
 };
 
@@ -19,14 +23,13 @@ const clearDisplay = () => {
 appendToDisplay = number => {
 	if (screenValue === "0") {
 		screenValue = number;
-		updateScreen();
 	} else {
 		screenValue += number;
-		updateScreen();
 	}
+	updateScreen();
 };
 
-// Выбор операции (Кнопки деления, умножения, минус, плюс)
+// Выбор операции (Кнопки деления, умножения, минус, плюс, процент)
 
 let operation;
 let number1 = 0;
@@ -44,11 +47,12 @@ const chooseOperation = op => {
 let result;
 
 const calculate = () => {
-  //todo прм продолжителном нажатии на '=' выполнять op
-  
-	if (operation && !result) {
-		number2 = parseInt(screenValue);
-		switch (operation) {
+	if (operation ) {
+    number2 = parseInt(screenValue);
+    switch (operation) {
+      case "%":
+        result = number2 / 100 * number1;
+        break;
 			case "÷":
 				result = number1 / number2;
 				break;
@@ -64,23 +68,5 @@ const calculate = () => {
 		}
 		screenValue = result;
 		updateScreen();
-  } else if (operation && result) {
-    number1 = result
-		switch (operation) {
-			case "÷":
-				result = number1 / number2;
-				break;
-			case "×":
-				result = number1 * number2;
-				break;
-			case "-":
-				result = number1 - number2;
-				break;
-			case "+":
-				result = number1 + number2;
-				break;
-		}
-		screenValue = result;
-		updateScreen();
-	}
+  }
 };
