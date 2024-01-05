@@ -18,12 +18,21 @@ const clearDisplay = () => {
 	updateScreen();
 };
 
+// Проверка ширины экрана
+
+const isNormalWidth = () => {
+	let screenWidth = document.querySelector(".calculator__input-field").clientWidth;
+	if (screenWidth < 300) return true;
+	return false;
+}
+
 // Написать число (Кнопки от 0 до 9)
 
 appendToDisplay = number => {
-	if (screenValue === "0") {
+	let widthControl = isNormalWidth()
+	if (screenValue === "0" && widthControl) {
 		screenValue = number;
-	} else {
+	} else if (widthControl) {
 		screenValue += number;
 	}
 	updateScreen();
