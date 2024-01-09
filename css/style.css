@@ -204,6 +204,9 @@ table {
   font-weight: 400;
   line-height: normal;
   transition: 0.2s linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   flex: 1 1 calc(33.33% - 10px);
 }
 .calculator__button:hover {

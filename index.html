@@ -14,36 +14,36 @@
         <div class="major-block__container _container">
 
           <div class="major-block__calculator calculator">
-            <div class="calculator__screen">
+            <div class="calculator__screen"> 
               <div class="calculator__input-field">0</div>
             </div>
             <div class="calculator__body">
               <div class="calculator__row">
-                <button class="calculator__button double red" onclick="clearDisplay()">AC</button>
-                <button class="calculator__button orange" onclick="chooseOperation('%')">%</button>
-                <button class="calculator__button orange" onclick="chooseOperation('÷')">÷</button>
+                <button class="calculator__button double red _unselected" onclick="clearDisplay()" type="button">AC</button>
+                <button class="calculator__button orange" onclick="chooseOperation('%')" type="button">%</button>
+                <button class="calculator__button orange" onclick="chooseOperation('÷')" type="button">÷</button>
               </div>
               <div class="calculator__row">
-                <button class="calculator__button" onclick="appendToDisplay('1')">1</button>
-                <button class="calculator__button" onclick="appendToDisplay('2')">2</button>
-                <button class="calculator__button" onclick="appendToDisplay('3')">3</button>
-                <button class="calculator__button orange" onclick="chooseOperation('×')">×</button>
+                <button class="calculator__button" onclick="appendToDisplay('1')" type="button">1</button>
+                <button class="calculator__button" onclick="appendToDisplay('2')" type="button">2</button>
+                <button class="calculator__button" onclick="appendToDisplay('3')" type="button">3</button>
+                <button class="calculator__button orange" onclick="chooseOperation('×')" type="button">×</button>
               </div>
               <div class="calculator__row">
-                <button class="calculator__button" onclick="appendToDisplay('4')">4</button>
-                <button class="calculator__button" onclick="appendToDisplay('5')">5</button>
-                <button class="calculator__button" onclick="appendToDisplay('6')">6</button>
-                <button class="calculator__button orange" onclick="chooseOperation('-')">-</button>
+                <button class="calculator__button" onclick="appendToDisplay('4')" type="button">4</button>
+                <button class="calculator__button" onclick="appendToDisplay('5')" type="button">5</button>
+                <button class="calculator__button" onclick="appendToDisplay('6')" type="button">6</button>
+                <button class="calculator__button orange" onclick="chooseOperation('-')" type="button">-</button>
               </div>
               <div class="calculator__row">
-                <button class="calculator__button" onclick="appendToDisplay('7')">7</button>
-                <button class="calculator__button" onclick="appendToDisplay('8')">8</button>
-                <button class="calculator__button" onclick="appendToDisplay('9')">9</button>
-                <button class="calculator__button orange" onclick="chooseOperation('+')">+</button>
+                <button class="calculator__button" onclick="appendToDisplay('7')" type="button">7</button>
+                <button class="calculator__button" onclick="appendToDisplay('8')" type="button">8</button>
+                <button class="calculator__button" onclick="appendToDisplay('9')" type="button">9</button>
+                <button class="calculator__button orange" onclick="chooseOperation('+')" type="button">+</button>
               </div>
               <div class="calculator__row">
-                <button class="calculator__button double" onclick="appendToDisplay('0')">0</button>
-                <button class="calculator__button double orange" onclick="calculate()">=</button>
+                <button class="calculator__button double" onclick="appendToDisplay('0')" type="button">0</button>
+                <button class="calculator__button double orange" onclick="calculate()" type="button">=</button>
               </div>
             </div>
           </div>

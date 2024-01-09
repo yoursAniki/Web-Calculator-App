@@ -87,6 +87,11 @@
 
   transition: .2s linear;
 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   &:hover {
     background: #484848;
     transition: .2s linear;
@@ -132,3 +137,5 @@
     background: #ff02021b;
   }
 }
+
+//todo добавить самостоятельное написание чисел пользователем на экране

@@ -22,7 +22,7 @@ const clearDisplay = () => {
 
 const isNormalWidth = () => {
 	let screenWidth = document.querySelector(".calculator__input-field").clientWidth;
-	if (screenWidth < 300) return true; //todo сравнивать с существующий экраном
+	if (screenWidth < 300) return true; //todo сравнивать с существующим экраном
 	return false;
 }
 
